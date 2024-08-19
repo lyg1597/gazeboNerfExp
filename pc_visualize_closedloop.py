@@ -216,7 +216,7 @@ if __name__ == "__main__":
     ax.set_ylim(-20, 20)
     ax.set_zlim(110, 130)
 
-    fn = os.path.join(script_dir, f'./pc_closedloop_{arg}.pickle')
+    fn = os.path.join(script_dir, f'./res/exp_08-13-13-00/pc_closedloop_{arg}.pickle')
     with open(fn, 'rb') as f:
         M, E, C_list = pickle.load(f)
     C_list_truncate = C_list[:12]
